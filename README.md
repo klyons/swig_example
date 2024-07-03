@@ -2,7 +2,11 @@ command line instructions:
 
 $ swig -c++ -python S_example.i
 
-the above line will create. the .cxx wrapper file.  
+$ python setup.py build_ext --inplace
+
+the above lines will create. the .cxx wrapper file.
+the setup.py will create the actual .pyd
+
 make sure to include all C++ files in the setup.py including the .cxx and the .cpp
 example_module = Extension('_S_example', sources=['S_example_wrap.cxx', 'S_example.cpp'])
 
