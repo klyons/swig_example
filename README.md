@@ -1,6 +1,6 @@
 command line instructions: 
 
-$ swig -c++ -python S_example.i
+$ swig -c++ -python example.i
 
 $ python setup.py build_ext --inplace
 
