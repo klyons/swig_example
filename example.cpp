@@ -36,14 +36,19 @@ vector<double> square(const vector<double>& vec) {
     return result;
 }
 
+
+
 #if 1
 //extra not needed??
-int mySumInt(const vector<int>& vec) {
+int findSumInt(const vector<int>& vec) {
     return (findSum(vec));    
 }
 
-//extra not needed??
-double mySumDouble(const vector<double>& vec) {
+short findSumInt16(const vector<short>& vec) {
+    return (findSum(vec));
+}
+
+double findSumDouble(const vector<double>& vec) {
     return (findSum(vec));
 }
 
@@ -56,9 +61,35 @@ vector<int> multiplyInt(const vector<int>& vec, int b) {
 vector<double> multiplyDouble(const vector<double>& vec, double b) {
     return (multiply(vec, b));
 }
-#endif 
- 
+
+vector<vector<int>> multiply2DInt(const vector<vector<int>>& vec, int b) {
+    return (multiply2D(vec, b));
+}
+
+vector<vector<float>> multiply2DFloat(const vector<vector<float>>& vec, float b) {
+    return (multiply2D(vec, b));
+}
+
+vector<vector<double>> multiply2DDouble(const vector<vector<double>>& vec, double b) {
+    return (multiply2D(vec, b));
+}
+
+vector<vector<int>> process_2d_arrayInt(const vector<vector<int>>& a, int dim1, int dim2) {
+    return (process_2d_array(a, dim1, dim2));
+}
+
+vector<vector<float>> process_2d_arrayFloat(const vector<vector<float>>& a, int dim1, int dim2) {
+    return (process_2d_array(a, dim1, dim2));
+}
+
+vector<vector<double>> process_2d_arrayDouble(const vector<vector<double>>& a, int dim1, int dim2) {
+    return (process_2d_array(a, dim1, dim2));
+}
+
 double mySumFloatBB(const vector<double>& vec)
 {
     return(13.4);
 }
+
+#endif 
+ 

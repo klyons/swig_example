@@ -538,15 +538,333 @@ class DoubleVector(object):
 
 # Register DoubleVector in _example:
 _example.DoubleVector_swigregister(DoubleVector)
+class VectorOfDoubleVector(object):
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _example.VectorOfDoubleVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _example.VectorOfDoubleVector___nonzero__(self)
+
+    def __bool__(self):
+        return _example.VectorOfDoubleVector___bool__(self)
+
+    def __len__(self):
+        return _example.VectorOfDoubleVector___len__(self)
+
+    def __getslice__(self, i, j):
+        return _example.VectorOfDoubleVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _example.VectorOfDoubleVector___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _example.VectorOfDoubleVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _example.VectorOfDoubleVector___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _example.VectorOfDoubleVector___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _example.VectorOfDoubleVector___setitem__(self, *args)
+
+    def pop(self):
+        return _example.VectorOfDoubleVector_pop(self)
+
+    def append(self, x):
+        return _example.VectorOfDoubleVector_append(self, x)
+
+    def empty(self):
+        return _example.VectorOfDoubleVector_empty(self)
+
+    def size(self):
+        return _example.VectorOfDoubleVector_size(self)
+
+    def swap(self, v):
+        return _example.VectorOfDoubleVector_swap(self, v)
+
+    def begin(self):
+        return _example.VectorOfDoubleVector_begin(self)
+
+    def end(self):
+        return _example.VectorOfDoubleVector_end(self)
+
+    def rbegin(self):
+        return _example.VectorOfDoubleVector_rbegin(self)
+
+    def rend(self):
+        return _example.VectorOfDoubleVector_rend(self)
+
+    def clear(self):
+        return _example.VectorOfDoubleVector_clear(self)
+
+    def get_allocator(self):
+        return _example.VectorOfDoubleVector_get_allocator(self)
+
+    def pop_back(self):
+        return _example.VectorOfDoubleVector_pop_back(self)
+
+    def erase(self, *args):
+        return _example.VectorOfDoubleVector_erase(self, *args)
+
+    def __init__(self, *args):
+        _example.VectorOfDoubleVector_swiginit(self, _example.new_VectorOfDoubleVector(*args))
+
+    def push_back(self, x):
+        return _example.VectorOfDoubleVector_push_back(self, x)
+
+    def front(self):
+        return _example.VectorOfDoubleVector_front(self)
+
+    def back(self):
+        return _example.VectorOfDoubleVector_back(self)
+
+    def assign(self, n, x):
+        return _example.VectorOfDoubleVector_assign(self, n, x)
+
+    def resize(self, *args):
+        return _example.VectorOfDoubleVector_resize(self, *args)
+
+    def insert(self, *args):
+        return _example.VectorOfDoubleVector_insert(self, *args)
+
+    def reserve(self, n):
+        return _example.VectorOfDoubleVector_reserve(self, n)
+
+    def capacity(self):
+        return _example.VectorOfDoubleVector_capacity(self)
+    __swig_destroy__ = _example.delete_VectorOfDoubleVector
+
+# Register VectorOfDoubleVector in _example:
+_example.VectorOfDoubleVector_swigregister(VectorOfDoubleVector)
+class VectorOfIntVector(object):
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _example.VectorOfIntVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _example.VectorOfIntVector___nonzero__(self)
+
+    def __bool__(self):
+        return _example.VectorOfIntVector___bool__(self)
+
+    def __len__(self):
+        return _example.VectorOfIntVector___len__(self)
+
+    def __getslice__(self, i, j):
+        return _example.VectorOfIntVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _example.VectorOfIntVector___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _example.VectorOfIntVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _example.VectorOfIntVector___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _example.VectorOfIntVector___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _example.VectorOfIntVector___setitem__(self, *args)
+
+    def pop(self):
+        return _example.VectorOfIntVector_pop(self)
+
+    def append(self, x):
+        return _example.VectorOfIntVector_append(self, x)
+
+    def empty(self):
+        return _example.VectorOfIntVector_empty(self)
+
+    def size(self):
+        return _example.VectorOfIntVector_size(self)
+
+    def swap(self, v):
+        return _example.VectorOfIntVector_swap(self, v)
+
+    def begin(self):
+        return _example.VectorOfIntVector_begin(self)
+
+    def end(self):
+        return _example.VectorOfIntVector_end(self)
+
+    def rbegin(self):
+        return _example.VectorOfIntVector_rbegin(self)
+
+    def rend(self):
+        return _example.VectorOfIntVector_rend(self)
+
+    def clear(self):
+        return _example.VectorOfIntVector_clear(self)
+
+    def get_allocator(self):
+        return _example.VectorOfIntVector_get_allocator(self)
+
+    def pop_back(self):
+        return _example.VectorOfIntVector_pop_back(self)
+
+    def erase(self, *args):
+        return _example.VectorOfIntVector_erase(self, *args)
+
+    def __init__(self, *args):
+        _example.VectorOfIntVector_swiginit(self, _example.new_VectorOfIntVector(*args))
+
+    def push_back(self, x):
+        return _example.VectorOfIntVector_push_back(self, x)
+
+    def front(self):
+        return _example.VectorOfIntVector_front(self)
+
+    def back(self):
+        return _example.VectorOfIntVector_back(self)
+
+    def assign(self, n, x):
+        return _example.VectorOfIntVector_assign(self, n, x)
+
+    def resize(self, *args):
+        return _example.VectorOfIntVector_resize(self, *args)
+
+    def insert(self, *args):
+        return _example.VectorOfIntVector_insert(self, *args)
+
+    def reserve(self, n):
+        return _example.VectorOfIntVector_reserve(self, n)
+
+    def capacity(self):
+        return _example.VectorOfIntVector_capacity(self)
+    __swig_destroy__ = _example.delete_VectorOfIntVector
+
+# Register VectorOfIntVector in _example:
+_example.VectorOfIntVector_swigregister(VectorOfIntVector)
+class VectorOfFloatVector(object):
+    thisown = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _example.VectorOfFloatVector_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _example.VectorOfFloatVector___nonzero__(self)
+
+    def __bool__(self):
+        return _example.VectorOfFloatVector___bool__(self)
+
+    def __len__(self):
+        return _example.VectorOfFloatVector___len__(self)
+
+    def __getslice__(self, i, j):
+        return _example.VectorOfFloatVector___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _example.VectorOfFloatVector___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _example.VectorOfFloatVector___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _example.VectorOfFloatVector___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _example.VectorOfFloatVector___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _example.VectorOfFloatVector___setitem__(self, *args)
+
+    def pop(self):
+        return _example.VectorOfFloatVector_pop(self)
+
+    def append(self, x):
+        return _example.VectorOfFloatVector_append(self, x)
+
+    def empty(self):
+        return _example.VectorOfFloatVector_empty(self)
+
+    def size(self):
+        return _example.VectorOfFloatVector_size(self)
+
+    def swap(self, v):
+        return _example.VectorOfFloatVector_swap(self, v)
+
+    def begin(self):
+        return _example.VectorOfFloatVector_begin(self)
+
+    def end(self):
+        return _example.VectorOfFloatVector_end(self)
+
+    def rbegin(self):
+        return _example.VectorOfFloatVector_rbegin(self)
+
+    def rend(self):
+        return _example.VectorOfFloatVector_rend(self)
+
+    def clear(self):
+        return _example.VectorOfFloatVector_clear(self)
+
+    def get_allocator(self):
+        return _example.VectorOfFloatVector_get_allocator(self)
+
+    def pop_back(self):
+        return _example.VectorOfFloatVector_pop_back(self)
+
+    def erase(self, *args):
+        return _example.VectorOfFloatVector_erase(self, *args)
+
+    def __init__(self, *args):
+        _example.VectorOfFloatVector_swiginit(self, _example.new_VectorOfFloatVector(*args))
+
+    def push_back(self, x):
+        return _example.VectorOfFloatVector_push_back(self, x)
+
+    def front(self):
+        return _example.VectorOfFloatVector_front(self)
+
+    def back(self):
+        return _example.VectorOfFloatVector_back(self)
+
+    def assign(self, n, x):
+        return _example.VectorOfFloatVector_assign(self, n, x)
+
+    def resize(self, *args):
+        return _example.VectorOfFloatVector_resize(self, *args)
+
+    def insert(self, *args):
+        return _example.VectorOfFloatVector_insert(self, *args)
+
+    def reserve(self, n):
+        return _example.VectorOfFloatVector_reserve(self, n)
+
+    def capacity(self):
+        return _example.VectorOfFloatVector_capacity(self)
+    __swig_destroy__ = _example.delete_VectorOfFloatVector
+
+# Register VectorOfFloatVector in _example:
+_example.VectorOfFloatVector_swigregister(VectorOfFloatVector)
 
 def square(*args):
     return _example.square(*args)
 
-def mySumInt(vec):
-    return _example.mySumInt(vec)
+def findSumInt16(vec):
+    return _example.findSumInt16(vec)
 
-def mySumFloatBB(vec):
-    return _example.mySumFloatBB(vec)
+def findSumInt(vec):
+    return _example.findSumInt(vec)
+
+def findSumDouble(vec):
+    return _example.findSumDouble(vec)
 
 def multiplyDouble(vec, b):
     return _example.multiplyDouble(vec, b)
@@ -554,9 +872,36 @@ def multiplyDouble(vec, b):
 def multiplyInt(vec, b):
     return _example.multiplyInt(vec, b)
 
+def multiply2DInt(vec, b):
+    return _example.multiply2DInt(vec, b)
+
+def multiply2DFloat(vec, b):
+    return _example.multiply2DFloat(vec, b)
+
+def multiply2DDouble(vec, b):
+    return _example.multiply2DDouble(vec, b)
+
+def process_2d_arrayInt(vec, dim1, dim2):
+    return _example.process_2d_arrayInt(vec, dim1, dim2)
+
+def process_2d_arrayFloat(vec, dim1, dim2):
+    return _example.process_2d_arrayFloat(vec, dim1, dim2)
+
+def process_2d_arrayDouble(vec, dim1, dim2):
+    return _example.process_2d_arrayDouble(vec, dim1, dim2)
+
 def multiplyFloat(a, b):
     return _example.multiplyFloat(a, b)
 
-def mySumDouble(*args):
-    return _example.mySumDouble(*args)
+def mySumInt(a):
+    return _example.mySumInt(a)
+
+def mySumInt16(a):
+    return _example.mySumInt16(a)
+
+def mySumDouble(a):
+    return _example.mySumDouble(a)
+
+def mySumFloatBB(*args):
+    return _example.mySumFloatBB(*args)
 

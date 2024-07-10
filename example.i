@@ -1,9 +1,7 @@
 %module example
 
 %{
-    #define NPY_NO_DEPRECATED_API NPY_1_7_API_VERSION
     #define SWIG_FILE_WITH_INIT
-    #include <numpy/arrayobject.h>
     #include "example.h"
 %}
 
@@ -12,9 +10,12 @@
 
 namespace std {
     %template(IntVector) vector<int>;
-    %template(Int16Vector) vector<int16_t>;
+    %template(Int16Vector) vector<short>;
     %template(FloatVector) vector<float>;
     %template(DoubleVector) vector<double>;
+    %template(VectorOfDoubleVector) vector<vector<double>>;
+    %template(VectorOfIntVector) vector<vector<int>>;
+    %template(VectorOfFloatVector) vector<vector<float>>;
 }
 
 %include "example.h"
@@ -25,12 +26,23 @@ namespace std {
 %template(multiplyDouble) multiply<double>;
 
 // Template instantiations
-%template(sumInt) multiply<int>;
-double mySumDouble(const std::vector<double>& vec);
-//int mySumInt(const std::vector<int>& vec);
-//%template(sumDouble) sum<double>;
-double mySumFloatBB(const vector<double>& vec);
+%template(mySumInt) findSum<int>;
+%template(mySumInt16) findSum<short>;
+%template(mySumDouble) findSum<double>;
 
-%init %{
-    import_array();
-%}
+// Template instantiations
+%template(multiply2DInt) multiply2D<int>;
+%template(multiply2DFloat) multiply2D<float>;
+%template(multiply2DDouble) multiply2D<double>;
+
+//test new function
+%template(process_2d_arrayInt) process_2d_array<int>;
+%template(process_2d_arrayDouble) process_2d_array<double>;
+%template(process_2d_arrayFloat) process_2d_array<float>;
+
+double mySumFloatBB(const std::vector<double>& vec);
+
+// Apply the numpy.i typemaps
+//%apply (double* IN_ARRAY2, int DIM1, int DIM2) {(double* arr, int dim1, int dim2)}
+
+//extern vector<vector<double>> process_2d_arrayDouble(double* arr, int dim1, int dim2);
